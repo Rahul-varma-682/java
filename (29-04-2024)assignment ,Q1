@@ -1,0 +1,26 @@
+public class Adder {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public double add(double a, double b) {
+        return a + b;
+    }
+
+    public String add(String a, int b) {
+        return a + " " + b;
+    }
+
+    public static void main(String[] args) {
+        Adder adder = new Adder();
+        
+        System.out.println(adder.add(10, 20)); // Output: 30
+        System.out.println(adder.add(10, 20, 30)); // Output: 60
+        System.out.println(adder.add(10.5, 20.1)); // Output: 30.6
+        System.out.println(adder.add("Hello", 20)); // Output: Hello 20
+    }
+}
